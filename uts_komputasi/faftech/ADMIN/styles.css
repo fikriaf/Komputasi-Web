@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+:root {
+    --primary: #0d6efd;
+    --light: #EFFDF5;
+    --dark: #0E2E50;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    font-family: 'Numans', sans-serif;
+}
+
+body {
+    background-image: 
+        radial-gradient(circle, transparent 50%, black 100%), 
+        url('fikri.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: -200%;
+  }
+  100% {
+      background-position: 200%;
+  }
+}
+
+.icon h1 {
+  display: none;
+}
+.icon {
+  display: grid;
+  font-size: 2rem;
+  width: 450px;
+  color: white;
+}
+.icon img {
+  background: linear-gradient(12deg, rgba(255, 255, 255, 0.438), rgba(255, 255, 255, 0.034), rgba(255, 255, 255, 0.003));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  box-shadow: 5px 5px 5px #000;
+}
+@media screen and (max-width: 800px) {
+  .icon h1 {
+      display: block;
+  }
+  .icon {
+      margin-bottom: 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .icon img {
+      width: 20%;
+  }
+}
+
+.card{
+    border-radius: 5px;
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100wh;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.card-header h3{
+    color: white;
+}
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: var(--primary);
+    color: black;
+    border: 0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+    color: black;
+    background-color: var(--primary);
+    width: 100px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: white;
+}
+
+.links a{
+    margin-left: 4px;
+}
+
+@media (min-width: 800px) {
+    body {
+        background-image: 
+            radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.829) 100%), 
+            url('fikri.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@keyframes slide-in {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 20px;
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      right: 20px;
+    }
+    to {
+      right: -100%;
+    }
+  }
+
+  @keyframes reduce-width {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+      .card{
+        width: 100%;
+    }
+  }

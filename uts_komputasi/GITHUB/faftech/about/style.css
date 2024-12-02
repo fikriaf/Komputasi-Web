@@ -1,0 +1,44 @@
+
+@media (min-width: 901px) {
+    .sosial-connect {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sosial-connect a {
+        width: 150px;
+    }
+}
+@media (max-width: 500px) {
+    .foto img {
+        width: 100px;
+    }
+    .nama img {
+        width: 100%;
+    }
+    .nama .tangan {
+        width: 45px;
+    }
+    .nama h1 {
+        font-size: 1.5rem;
+    }
+    .nama h3 {
+        font-size: 1.5rem;
+    }
+    .foto img {
+        width: 100% !important;
+        margin-bottom: 10%;
+    }
+    .foto ul {
+        text-align: justify;
+        margin-left: 0 !important;
+    }
+    .tool h4 {
+        font-size: 2rem;
+    }
+    .stat .lang {
+        width: 90%;
+    }
+    .stat div img {
+        width: 90%;
+    }
+}
