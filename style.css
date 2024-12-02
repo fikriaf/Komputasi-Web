@@ -1,0 +1,89 @@
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background-image: url("./bg.jpg");
+    object-fit: cover;
+    background-size: cover;
+}
+
+.identitas {
+    border-style: groove;
+    border-radius: 5px;
+    color: white;
+}
+
+.baris1,
+.baris2,
+.baris3,
+.baris4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.pertemuan1,
+.pertemuan2,
+.pertemuan3,
+.pertemuan4,
+.pertemuan5,
+.pertemuan6,
+.pertemuan7,
+.uts,
+.pertemuan9,
+.pertemuan10,
+.pertemuan11,
+.pertemuan12 {
+    width: 250px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 3px cyan;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+.image img {
+    width: inherit;
+    display: block;
+}
+
+.button {
+    width: inherit;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    transition: background-color 0.3s ease, width 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3705c2;
+    width: 269px;
+    transform: skew(-20deg);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.button a {
+    width: 100%;
+    height: inherit;
+    padding: inherit;           
+    text-align: center;        
+    color: black;              
+    display: flex;             
+    justify-content: center;   
+    align-items: center; 
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+.button a:hover {
+    color: white;
+}
+
