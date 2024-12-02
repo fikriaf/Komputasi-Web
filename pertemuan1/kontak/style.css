@@ -1,0 +1,129 @@
+html {
+    background-image: url("bg1.jpg");
+    background-size: 100%;
+    transform: scale(0.8);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+form  {
+    position: relative;
+    margin-top: 20px;
+    padding: 50px;
+}
+form::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center; 
+    align-items: flex-start; 
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.heading h1 {
+    font-size: 3em;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-style:ridge;
+    text-align: center;
+    width: 500px;
+}
+form .kontak {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_kontak {
+    font-size: 1.5em;
+    color: white;
+}
+
+.input_kontak input {
+    color: white;
+    font-size: 1em;
+    width: 81%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: dotted;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.input_kontak input#email {
+    margin-left: 5px;
+}
+.checkbox_gender,
+.checkbox_hobby {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.checkbox_gender .checkbox {
+    display: inline;
+    flex-direction: column; 
+    margin-left: 5px;
+}
+
+.checkbox_hobby .checkbox label {
+    margin-left: 5px;
+}
+
+.checkbox_hobby input {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    border-style: double;
+    background-color: transparent;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.1);
+    margin-right: 10px; 
+}
+
+.button {
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+}
+
+.button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+.button #reset {
+    background-color: #f44336;
+}
+
+.button #reset:hover {
+    background-color: #920a00;
+}
+.button #submit:hover {
+    background-color: rgb(1, 136, 1);
+}

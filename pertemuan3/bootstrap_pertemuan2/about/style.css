@@ -1,0 +1,38 @@
+.bg {
+    background-image: url('bg1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -109;
+}
+
+html, body {
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.biodata {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.biodata h1 {
+    font-size: 4em;
+    border: double;
+    padding: 0.5% 7.6%;
+    margin: -1px;
+}
+
+.detail {
+    font-size: 2em;
+    border: double;
+    padding: 0.5% 1.8%;
+    margin: 0;
+}
