@@ -1,0 +1,74 @@
+html {
+    background-image: url('../contact/bg1.jpg');
+    background-size: cover;
+    transform: scale(0.9);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.bg-transparent::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25%;
+    height: 100%;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.heading h1 {
+    border-style:none;
+    text-align: center;
+}
+
+form .kontak {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_kontak input {
+    border-style: dotted;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.checkbox_hobby input {
+    border-style: double;
+    background-color: transparent;
+}
+
+.button {
+    justify-content: left;
+}
+
+.button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button #reset {
+    background-color: #f44336;
+}
+
+.button #reset:hover {
+    background-color: #ff1100;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+.button #submit:hover {
+    background-color: rgb(1, 136, 1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 255, 55, 0.5);
+}
